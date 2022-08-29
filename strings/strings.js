@@ -1,6 +1,6 @@
 "use strict";
 
-let name = "Albus Percival Wulfric Brian Dumbledore";
-let len = name.length;
+console.log("hello");
 
-console.log("Total number of characters is ${len}");
+const name = "Albus Percival Wulfric Brian Dumbledore";
+const total = name.length;
