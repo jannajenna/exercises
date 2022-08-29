@@ -1,8 +1,6 @@
 "use strict";
-/* Template literal */
 
-let personName = "Anna";
-let animalType = "unicorn";
-let animalName = "Rainbow";
+let name = "Albus Percival Wulfric Brian Dumbledore";
+let len = name.length;
 
-console.log(`My name is ${personName}. \n I have a ${animalType} called ${animalName}.`);
+console.log("Total number of characters is ${len}");
