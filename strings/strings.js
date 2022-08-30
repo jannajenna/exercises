@@ -14,6 +14,8 @@ const wulfric = name.substring(15, 22);
 const wulfric2 = name.substring(14, 23);
 const ian = name.substring(25, 28);
 const bus = name.substring(2, 5);
+/* const firstD = name.indexOf("d");
+const vowelE = name.lastIndefOf("e"); */
 
 console.log(`Total number of characters is: ${total}`);
 console.log(`The second letter of ${name} is ${letter2} and the sixth is ${letter6} `);
@@ -23,6 +25,8 @@ console.log(`This is _${wulfric}_`);
 console.log(`This is _${wulfric2}_`);
 console.log(`This is _${ian}_`);
 console.log(`This is _${bus}_`);
+console.log(`This is _${name.indexOf("D")}_`);
+console.log(`This is _${name.lastIndexOf("e")}_`);
 
 /* spaces */
 /* const str1 = "  There is     space here \n ";
