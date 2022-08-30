@@ -1,21 +1,15 @@
 "use strict";
 
-/* Given a name string, e.g. “Peter Heronimous Lind” - split the string into three variables: firstName, middleName and lastName.
+const person = "Albus Percival Wulfric Brian Dumbledore";
 
-Hint: use indexOf and substring 
+let firstName = person.substring(0, person.indexOf(" "));
 
-Expect the name to be a const - you can’t modify it.
+let middleName = person.substring(person.indexOf(" ") + 1, person.lastIndexOf(" ") + 1);
 
-Console.log the three variables at the very end of your code.
+let lastName = person.substring(person.lastIndexOf(" ") + 1);
 
-*/
-
-const person = "Peter Heronimous Lind";
 console.log(`${person}`);
 
-const firstName = person.indexOf();
-0;
 console.log(`${firstName}`);
-
-/* const middleName = 
-const lastName =  */
+console.log(`${middleName}`);
+console.log(`${lastName}`);
