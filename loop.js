@@ -1,8 +1,8 @@
-console.log("hello");
+"user stric";
 
-let counter = 0;
+let counter;
 
-for (counter < 10; counter++; ) {
+for (let counter = 1; (counter = 10); counter++) {
   console.log(counter);
 }
 
