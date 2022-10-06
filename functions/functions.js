@@ -9,8 +9,46 @@ function sayHello(firstName) {
 
 sayHello(myName, lastName); */
 
-function presentPet(firstName, animalType, animalName) {
-  console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}`);
+//RETURN VALUES
+
+/* function greeting(firstName) {
+  console.log(`Hello ${firstName}`);
 }
 
-presentPet(`Anna`, `cat`, `Sunny`);
+const sayHi = greeting;
+
+sayHi("Harry");
+greeting("Harry");
+ */
+
+//CALLBACK FUNCTIONS
+
+const person3 = {
+  firstName: "Harry",
+  lasttName: "Potter",
+  hired: false,
+};
+
+const person4 = {
+  firstName: "Fred",
+  lasttName: "Weasley",
+  hired: false,
+};
+
+function hire(person) {
+  person.hired = true;
+  //console.log(`The person hired is ${person}`);
+}
+
+function fire(person) {
+  person.hired = false;
+  //console.log(`The person fired is ${person}`);
+}
+
+function fireOrHire(action, person) {
+  action(person);
+  console.log(`The person is ${person}`);
+}
+
+fireOrHire(hire, person4);
+fireOrHire(fire, person3);
