@@ -19,12 +19,23 @@ const animals = [
   },
 ];
 
-function isCat(animal) {
+/* function isCat(animal) {
   if (animal.type === "cat") {
     return true;
   } else {
     return false;
   }
+} */
+
+function all (animal){
+  return true;
 }
 
-isCat();
+function none (animal){
+  return false;
+}
+
+animals.filter(all);
+animals.filter(none);
+
+console.log(animals)
